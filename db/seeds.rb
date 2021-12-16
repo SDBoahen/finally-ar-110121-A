@@ -3,9 +3,12 @@
 
 
 
+Mooply.destroy_all
+puts "
+All Mooplies Reset Cap'in!
+"
 
 Woobly.destroy_all
-
 puts "
 All Wooblies Reset Cap'in!
 "
@@ -17,23 +20,48 @@ All Pals Reset Cap'in!
 
 
 
-woobly = Woobly.create( name: "Woobly", fav_snack: "Ice Cream", my_pal: 1 )
-# woobly = Woobly.create( name: "Woobly", fav_snack: "Ice Cream", my_pal: "Sam" )
 
-joobly = Woobly.create( name: "Joobly", fav_snack: "Chips", my_pal: 0 )
-# joobly = Woobly.create( name: "Joobly", fav_snack: "Chips", my_pal: "Josh" )
+####  Pal Seeds 
 
-
-# woobly = Woobly.new( name: "Woobly", fav_snack: "Ice Cream")
-# woobly.save
-# joobly = Woobly.new( name: "Joobly", fav_snack: "Chips")
-# joobly.save
-
-
-
-sam  = Pal.create( name: "Sam" )
+sam   = Pal.create( name: "Sam" )
+josh  = Pal.create( name: "Josh" )
 
 sam2 = Pal.create( name: "Sam" )
+
+
+################  Pal Seeds 
+
+
+
+
+####  Woobly Seeds 
+
+
+woobly = Woobly.create( name: "Woobly", fav_snack: "Ice Cream", pal_id: sam.id )
+
+joobly = Woobly.create( name: "Joobly", fav_snack: "Chips", pal_id: josh.id )
+
+wawawa = Woobly.create( name: "Wawawa", fav_snack: "Carrots", pal_id: sam.id )
+
+
+################  Woobly Seeds 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mooply = Mooply.create( name: "Mooply" )
+
 
 
 
@@ -46,3 +74,9 @@ puts "
 "
 
 # binding.pry
+
+
+# woobly = Woobly.new( name: "Woobly", fav_snack: "Ice Cream")
+# woobly.save
+# joobly = Woobly.new( name: "Joobly", fav_snack: "Chips")
+# joobly.save

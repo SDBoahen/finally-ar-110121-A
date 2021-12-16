@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_16_174338) do
+ActiveRecord::Schema.define(version: 2021_12_16_214252) do
+
+  create_table "mooplies", force: :cascade do |t|
+    t.string "name"
+  end
 
   create_table "pals", force: :cascade do |t|
     t.string "name"
@@ -20,7 +24,7 @@ ActiveRecord::Schema.define(version: 2021_12_16_174338) do
     t.string "name"
     t.string "fav_snack"
     t.integer "age"
-    t.integer "my_pal"
+    t.integer "pal_id"
   end
 
 end

@@ -17,9 +17,12 @@ end
 desc "Allows us to Peek into our Database (db)👀 as well as access Class + Instance Methods"
 task :console do
 
-    puts "....
+    puts "
+    
+    ....
     
     We're In!!!! 💻👀❗️❗️
+    
     "
 
     Pry.start
